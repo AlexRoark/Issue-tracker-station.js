@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "Nasa"; 
+    src: url("./fonts/nasalizationrg.ttf") format("truetype"); 
+    font-weight: normal;
+    } 
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: radial-gradient(100% 197.75% at 0% 21.34%, #44464B 0%, #23304F 60.42%, #030713 100%), #FFFFFF;
+}
+
+header {
+    display: flex;
+    padding-left: 4vw;
+    padding-top: 2vw;
+    font-family: 'Nasa', Helvetica, sans-serif;
+    color: #bbb;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    align-items: center;
+    z-index: -1;
+}
+
+header img {
+    margin-right: 20px;
+}
+
+
+.masonry_wrapper { 
+    font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin: 40px 0px 0 25px;
+    font-size: 18px;
+}
+ .items {  
+    width: 300px;
+    min-height: 150px;
+    padding: 30px 25px 30px 25px;
+    margin: 10px 50px 30px 0;
+    transition: .8s opacity;
+    background: hsl(0deg 0% 15% / 50%);
+    border-radius: 50px;
+} 
+  
+.masonry_wrapper:hover .items { opacity: 0.3; }
+.masonry_wrapper:hover .items:hover { opacity: 1; } 
+
+.form_add {
+    margin: 40px 25px;
+}
+
+ .title {
+    font-size: 18px;
+    font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 15px 20px 15px;
+    overflow-wrap: break-word;
+}
+
+.issue .title::before {
+    content: "";
+    position: relative;
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px 0 0;
+    background: url(./src/circle-notch.png) no-repeat;
+}
+
+.issue {
+    height: 100%;
+}
+
+.issueList {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+.status {
+        display: block;
+        width: 200px;
+        height: 3px;
+        background: #a51429;
+        border-radius: 100px;
+        margin: 0 auto;
+        margin-top: -30px;
+        margin-bottom: 30px;
+}
+
+.status-cls {
+    background: #14a526;
+}
+
+.status-cls-btn {
+    display: none;
+}
+
+.issue .id {
+    font-size: 10px;
+    color: #BDBDBD;
+    margin: -18px 0 0 45px;
+    font-weight: lighter;
+}
+
+.issue .discription {
+    margin: 20px 0px 0px 15px;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.issue .assignee_severity {
+    font-size: 10px;
+    color: #BDBDBD;
+    margin: 5px 0 0 15px;
+    font-weight: lighter;
+}
+
+.issue button {
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    height: 10px;
+    padding: 10px;
+    background: #D1D2D1;
+    border-radius: 10px;
+    border: none;
+}
+
+input[name="assignee"] {
+    width: 9.5em;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    background: #D1D2D1;
+    border-radius: 10px;
+    resize: none;
+}
+
+select {    
+    width: 12em;
+    padding: 8px;
+    background: #D1D2D1;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+
+button {
+    width: 70px;
+    height: 32px;
+    margin: 0 auto;
+    background: #3e3e3e;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #494949;
+}
+
+#add {
+    margin-left: 25px;
+}
+
+#delete {
+    background: #641C1C;
+}
+
+#delete:hover {
+    background: #722727;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.watemark {
+    position: fixed;
+    width: 936px;
+    height: 550px;
+    right: -100px;
+    bottom: -100px;
+    background: url('./src/watemark.png') no-repeat;
+    z-index: -1;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issue Tracker Station</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./src/logo.png" alt="ITS Logo" />Issue Tracker Station
+    </header>
+
+    <div class="form_add">
+      <div class="items" style="opacity: 1">
+        <div class="title">Submit Issue</div>
+        <form id="submit_issue">
+          <input
+            type="text"
+            name="title"
+            placeholder="Title"
+            class="submit_text"
+            id="submit_title"
+            minlength="5"
+            autofocus
+            required
+          />
+          <textarea
+            name="descriptions"
+            placeholder="Description"
+            class="space submit_textarea"
+            id="submit_description"
+            cols="30"
+            rows="3"
+          ></textarea>
+          <input
+            type="text"
+            name="assignee"
+            placeholder="Assignee"
+            class="space submit_text"
+            id="submit_assignee"
+            required
+          />
+          <select class="space submit_select" id="submit_severity">
+            <option disabled>Severity</option>
+            <option>Low</option>
+            <option>Middle</option>
+            <option>Hight</option>
+          </select>
+          <button type="submit" id="add" class="space">Add</button>
+        </form>
+      </div>
+    </div>
+    <div class="masonry_wrapper"></div>
+
+    <div class="watemark"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
